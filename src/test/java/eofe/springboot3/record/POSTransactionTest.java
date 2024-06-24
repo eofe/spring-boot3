@@ -49,7 +49,7 @@ public class POSTransactionTest {
 
         assertThat(json.parse(given)).isEqualTo(new POSTransaction(UUID.fromString("019027f1-375c-7596-b79c-a521783df670"), new BigDecimal("6.99")));
         assertThat(json.parseObject(given).id()).isEqualTo(uuid);
-        //
+
         assertThat(json.parseObject(given).amount()).isEqualTo(new BigDecimal("6.99"));
     }
 }
